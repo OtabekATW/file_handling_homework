@@ -6,5 +6,18 @@ def main(data:str):
     Returns:
         int: return answer
     """
+    f = open(data, 'r')
+    s = f.read()
+    list1 = s.split()
+
+    for i in list1:
+        if i.isalpha():
+            list1.remove(i)
+    
+    list2 = []
+    for i in list1:
+        list2.append(float(i))
+    
+    return min(list2)
 
 # Read data from file
