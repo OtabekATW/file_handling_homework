@@ -10,6 +10,7 @@ def main(data:str):
     s = f.read()
 
     list1 = s.split('\n')
+    
     mx = len(list1[0])
     for i in list1:
         if mx < len(i):
