@@ -1,5 +1,5 @@
-Django 4.0
-NumPy 1.22.0
+Django 4
+NumPy 1.22
 TensorFlow 2
-python 3.10.0
+python 3.10
 Windows 7
