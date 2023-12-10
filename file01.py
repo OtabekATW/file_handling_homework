@@ -14,4 +14,3 @@ def main(data:str):
     return numbers
 
 # Read data from file
-print(main('data/data01.txt'))
