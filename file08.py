@@ -10,7 +10,6 @@ def main(data:str):
     s = f.read()
     list1 = s.split()
 
-    # digits = []
     for i in list1:
         if i.isalpha():
             list1.remove(i)
