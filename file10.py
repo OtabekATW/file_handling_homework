@@ -16,5 +16,3 @@ def main(data:str):
     return mx
 
 # Read data from file
-f = open('data/data10.txt')
-print(main(f.read()))
