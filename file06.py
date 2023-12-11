@@ -6,9 +6,8 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    f = open(data, 'r')
-    s = f.read()
-    language = s.split()
+
+    language = data.split()
 
     list1 = []
     for i in language:
@@ -17,3 +16,5 @@ def main(data:str):
     return list1
     
 # Read data from file
+f = open('data/data06.txt')
+print(main(f.read()))
