@@ -6,11 +6,8 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    f = open(data, 'r')
-    s = f.read()
+    list1 = data.split('\n')
 
-    list1 = s.split('\n')
-    
     mx = len(list1[0])
     for i in list1:
         if mx < len(i):
@@ -19,3 +16,5 @@ def main(data:str):
     return mx
 
 # Read data from file
+f = open('data/data10.txt')
+print(main(f.read()))
