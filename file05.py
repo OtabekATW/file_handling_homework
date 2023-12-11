@@ -17,5 +17,3 @@ def main(data:str):
     return [len(list1), len(list2)]
     
 # Read data from file
-f = open('data/data05.txt')
-print(main(f.read()))
