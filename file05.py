@@ -6,12 +6,10 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    f = open(data, 'r')
-    s = f.read()
     
     list1 = []
     list2 = []
-    for i in s:
+    for i in data:
         if i.isdigit():
             list1.append(i)
         else:
@@ -19,3 +17,5 @@ def main(data:str):
     return [len(list1), len(list2)]
     
 # Read data from file
+f = open('data/data05.txt')
+print(main(f.read()))
