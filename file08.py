@@ -7,16 +7,11 @@ def main(data:str):
         int: return answer
     """
 
-    list1 = data.split()
-
-    for i in list1:
-        if i.isalpha():
-            list1.remove(i)
+    list1 = []
+    for i in data:
+        if i.isdigit():
+            list1.append(int(i))
     
-    list2 = []
-    for i in list1:
-        list2.append(i)
-    
-    return max(list2)
+    return max(list1)
 
 # Read data from file
