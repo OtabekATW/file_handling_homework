@@ -6,10 +6,8 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    f = open(data, 'r')
-    s = f.read()
 
-    numbers = s.split(',')
+    numbers = data.split(',')
 
     return numbers
 
