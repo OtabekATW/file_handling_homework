@@ -6,9 +6,8 @@ def main(data:str):
     Returns:
         int: return answer
     """
-    f = open(data, 'r')
-    s = f.read()
-    list1 = s.split()
+
+    list1 = data.split()
 
     for i in list1:
         if i.isalpha():
@@ -16,7 +15,7 @@ def main(data:str):
     
     list2 = []
     for i in list1:
-        list2.append(float(i))
+        list2.append(i)
     
     return max(list2)
 
